@@ -1,0 +1,81 @@
+:root {
+  --red: #e50914;
+  --black: #141414;
+  --font-white: #ffffff;
+  --font-grey: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--font-white);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--red);
+  font-family: 'Arial Black', Times;
+  font-size: 4rem;
+  margin-left: 0.5rem;
+}
+
+header nav a {
+  color: var(--font-grey);
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+header nav a:hover {
+  color: var(--font-white);
+}
+
+/* TRAILER */
+.trailer {
+  font-size: 1.6rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('/img/komi-bg.jpg');
+  height: 40rem;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.trailer .trailer-desc {
+  margin-bottom: 4rem;
+}
+
+.trailer .trailer-title {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.trailer-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--font-white);
+  padding: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
