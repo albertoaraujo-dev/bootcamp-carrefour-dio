@@ -1,8 +1,8 @@
 :root {
   --red: #e50914;
   --black: #141414;
-  --font-white: #ffffff;
-  --font-grey: #aaaaaa;
+  --white: #ffffff;
+  --grey: #aaaaaa;
 }
 
 * {
@@ -19,11 +19,11 @@ html {
 
 body {
   background: var(--black);
-  font-family: 'Times New Roman', Times, serif;
-  color: var(--font-white);
+  font-family: 'Arial', Times, serif;
+  color: var(--white);
 }
 
-header .container {
+header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,13 +37,17 @@ header .logo {
 }
 
 header nav a {
-  color: var(--font-grey);
+  color: var(--grey);
   margin-right: 1rem;
   font-size: 1.6rem;
 }
 
 header nav a:hover {
-  color: var(--font-white);
+  color: var(--white);
+}
+
+.wrapper {
+  margin-left: 3rem;
 }
 
 /* TRAILER */
@@ -60,22 +64,58 @@ header nav a:hover {
   align-items: flex-start;
 }
 
-.trailer .trailer-desc {
+.trailer .wrapper {
+  width: 70%;
+}
+
+.trailer .wrapper .trailer-desc {
   margin-bottom: 4rem;
 }
 
-.trailer .trailer-title {
+.trailer .wrapper .trailer-title {
   margin-top: 2rem;
   font-size: 4rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
-.trailer-button {
+/* .trailer .wrapper .trailer-buttons {
+  display: flex;
+  flex-direction: row;
+} */
+.trailer .wrapper .trailer-buttons .trailer-button-play,
+.trailer .wrapper .trailer-buttons .trailer-button-info {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  color: var(--font-white);
-  padding: 1.5rem;
-  margin-right: 1.5rem;
+  color: var(--white);
+  padding: 1rem 2.5rem;
   font-size: 1.2rem;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 0.5rem;
+  /*display: flex;
+    gap: 1rem;*/
+}
+
+.trailer .wrapper .trailer-buttons .trailer-button-play:hover,
+.trailer .wrapper .trailer-buttons .trailer-button-info:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: var(--white);
+  color: var(--black); */
+}
+
+.trailer .wrapper .trailer-buttons .trailer-button-play i,
+.trailer .wrapper .trailer-buttons .trailer-button-info i {
+  margin-right: 0.8rem;
+}
+
+.box-trailer {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-trailers {
+  margin-top: 0.5rem;
 }

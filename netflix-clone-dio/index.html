@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
+    <!--responsive-->
+    <link rel="stylesheet" href="style/responsive.css" />
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
     <title>Netflix Clone</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <h2 class="logo">NETFLIX</h2>
+      <div class="wrapper">
+        <h2 class="logo">Trailerflix</h2>
         <nav>
           <a href="#">Início</a>
           <a href="#">Séries</a>
@@ -29,13 +34,64 @@
             ambiciosa: fazer 100 amigos.
           </p>
           <div class="trailer-buttons">
-            <button role="button" class="trailer-button">Assistir</button>
-            <button role="button" class="trailer-button">
+            <button role="button" class="trailer-button-play">
+              <i class="fa-solid fa-play"></i>
+              Assistir
+            </button>
+            <button role="button" class="trailer-button-info">
+              <i class="fa-solid fa-circle-info"></i>
               Mais informações
             </button>
           </div>
         </div>
       </div>
     </main>
+    <div class="carousel-trailers">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-trailer" src="img/min1.jpg" alt="trailer 1" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min2.jpg" alt="trailer 2" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min3.jpg" alt="trailer 3" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min4.jpg" alt="trailer 4" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min5.jpg" alt="trailer 5" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min6.jpg" alt="trailer 6" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min7.jpg" alt="trailer 7" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min8.jpg" alt="trailer 8" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min9.jpg" alt="trailer 9" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min10.jpg" alt="trailer 10" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min11.jpg" alt="trailer 11" />
+        </div>
+        <div class="item">
+          <img class="box-trailer" src="img/min12.jpg" alt="trailer 12" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/cf60837860.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/setup.js"></script>
   </body>
 </html>
